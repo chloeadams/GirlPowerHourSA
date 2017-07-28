@@ -1,0 +1,41 @@
+body, html, body, * {
+  margin: 0px;
+  padding: 0px;
+  border: 0; }
+
+#container {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute; }
+  #container > div {
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+  #container img {
+    width: 300px;
+    height: 250px; }
+
+#chromeCover {
+  width: 300px;
+  height: 250px;
+  background: #FFFFFF; }
+
+#border {
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000000;
+  background-color: transparent; }
+
+#clickScreen {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 250px;
+  background-color: transparent; }
+
+#legal {
+  position: absolute;
+  top: 170px !important;
+  height: 35px !important; }

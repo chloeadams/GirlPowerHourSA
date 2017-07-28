@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://s0.2mdn.net/3576711/1482160852189/300X250/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="ad.size" content="width=300,height=250">
+	<title>ACQUISITION_BANNERS_300X250</title>
+
+	<link rel="stylesheet" href="./style-min.css">
+	<script src="./TweenLite.min.js"></script>
+	<script src="./EasePack.min.js"></script>
+	<script src="./CSSPlugin.min.js"></script>
+	<script type="text/javascript" src="./iscroll-min.js"></script>
+
+	<script>
+		/* global console:true */
+		var clickTag = "";
+		console.log(clickTag);
+	</script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body>
+
+	<div id="container">
+		<div id="bg2" style="opacity: 1;"><img src="./bg2.jpg"></div>
+		<div id="bg" style="opacity: 0;"><img src="./bg.jpg"></div>
+		<div id="swoosh" style="transform: matrix(1, 0, 0, 1, 0, 0);"><img src="./swoosh.png"></div>
+
+		<div id="footer" style="opacity: 1;"><img src="./footer.png"></div>
+
+		<div id="copy_01" style="opacity: 0;"><img src="./copy_01.png"></div>
+		<div id="copy_02" style="opacity: 0;"><img src="./copy_02.png"></div>
+		<div id="copy_03" style="opacity: 0;"><img src="./copy_03.png"></div>
+		<div id="copy_04" style="opacity: 0;"><img src="./copy_04.png"></div>
+
+		<div id="shimmer" style="opacity: 0; transform: matrix(1, 0, 0, 1, 150, -30);"><img src="./shimmer.png"></div>
+
+		<div id="bg_1" style="opacity: 0;"><img src="./bg_1.png"></div>
+		<div id="bg_2" style="opacity: 0;"><img src="./bg_2.png"></div>
+		<div id="bg_3" style="opacity: 0;"><img src="./bg_3.png"></div>
+		<div id="bg_4" style="opacity: 0;"><img src="./bg_4.png"></div>
+		
+		<div id="copy_05" style="opacity: 1;"><img src="./copy_05.png"></div>
+
+
+		<div id="flare" style="opacity: 0; transform: matrix(1, 0, 0, 1, 50, 0); transform-origin: 50% 50% 0px;"><img src="./flare.png"></div>
+		<div id="border"></div>
+
+		<a id="clickScreen" href="https://s0.2mdn.net/3576711/1482160852189/300X250/index.html#" onclick="window.open(window.clickTag); return false;"> </a>
+
+		<div id="chromeCover" style="visibility: hidden; opacity: 0;"></div>
+
+		<!-- <div id="chromeCover"></div> -->
+	<!--CONTAINER END-->
+	</div>
+
+	<script type="text/javascript" src="./script-min.js"></script>
+
+
+</body></html>

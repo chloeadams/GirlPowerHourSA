@@ -1,0 +1,164 @@
+@import "resets.css";
+
+#wrapper {
+  width: 726px;
+  height: 88px;
+  border: 1px solid #666666;
+  position: absolute;
+  overflow: hidden;
+  font-family: Helvetica, sans-serif;
+}
+#banner {
+    width: 726px;
+    height: 88px;
+    overflow: hidden;
+}
+.pab{
+  position: absolute;
+}
+.pac{
+  position: absolute;
+  opacity: 0;
+}
+.fullbg{
+  width: 726px;
+  height: 88px;
+  top: 0;
+  left: 0;
+}
+#bg{
+  background-color: #FFF;
+  background: url('../_asset/_frame6.jpg') center center no-repeat;
+  background: url('../img/bg.jpg') center center no-repeat;
+}
+
+#text1{
+  background: url(../img/text1.png) center center no-repeat;
+}
+#text2{
+  background: url(../img/text2.png) center center no-repeat;
+}
+#text3{
+  background: url(../img/text3.png) center center no-repeat;
+}
+#text4{
+  background: url(../img/text4.png) center center no-repeat;
+}
+.tmp{
+  top: 0px;
+  left: 0px;
+  width: 726px;
+  height: 88px;
+}
+#text5{
+  top: 23px;
+  left: 225px;
+  width: 256px;
+  height: 42px;
+  background: url(../img/text5.png) center center no-repeat;
+}
+#gate{
+  top: 17px;
+  left: 231px;
+  width: 263px;
+  height: 53px;
+  background: url(../img/gate.png) center center no-repeat;
+  opacity: 1;
+}
+#logo{
+  bottom: -88px;
+  right: 0px;
+  width: 110px;
+  height: 88px;
+  background: url(../img/logo.png) center center no-repeat;
+  background-color: #FFF;
+}
+#shadow{
+  width: 226px;
+  height: 31px;
+  top: 73px;
+  left: 251px;
+  background: url('../img/shadow.png') center center no-repeat;
+}
+#roll{
+  position: absolute;
+  width: 260px;
+  height: 49px;
+  top: 19px;
+  left: 232px;
+  /*background-color: green;*/
+  overflow: hidden;
+}
+.a{
+  background: url(../img/a.png) center center no-repeat;
+}
+.g{
+  background: url(../img/g.png) center center no-repeat;
+}
+.r{
+  background: url(../img/r.png) center center no-repeat;
+}
+.o{
+  background: url(../img/o.png) center center no-repeat;
+}
+.w{
+  background: url(../img/w.png) center center no-repeat;
+}
+.c{
+  background: url(../img/c.png) center center no-repeat;
+}
+.e{
+  background: url(../img/e.png) center center no-repeat;
+}
+.s{
+  background: url(../img/s.png) center center no-repeat;
+}
+.h{
+  background: url(../img/h.png) center center no-repeat;
+}
+.m{
+  background: url(../img/m.png) center center no-repeat;
+}
+.k{
+  background: url(../img/k.png) center center no-repeat;
+}
+.f{
+  background: url(../img/f.png) center center no-repeat;
+}
+.i{
+  background: url(../img/i.png) center center no-repeat;
+}
+.n{
+  background: url(../img/n.png) center center no-repeat;
+}
+.d{
+  background: url(../img/d.png) center center no-repeat;
+}
+.l{
+  background: url(../img/l.png) center center no-repeat;
+}
+.letter{
+  width: 64px;
+  height: 49px;
+  position: absolute;
+}
+#cta{
+  top: 32px;
+  left: 492px;
+  width: 103px;
+  height: 24px;
+  background: url(../img/learnmoreOver.png) center center no-repeat;
+  background-color: #5ca5fc;
+  border: 1px solid #5ca5fc;
+  cursor: pointer;
+}
+#cta:hover{
+  background: url(../img/learnmore.png) center center no-repeat;
+  background-color: #FFF;
+  border: 1px solid #5ca5fc;
+}
+#click-area{
+  width: 726px;
+  height: 88px;
+  cursor: pointer;
+}

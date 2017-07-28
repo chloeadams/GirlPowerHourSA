@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://s0.2mdn.net/6344809/1497384408844/728x90.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="ad.size" content="width=728,height=90">
+<title>HTML5 Banner Layout 728x90</title>
+<link rel="stylesheet" type="text/css" href="./728x90(1).css">
+<script src="./Enabler(1).js"></script>
+<script type="text/javascript" src="./TweenLite.min(1).js"></script>
+<script type="text/javascript" src="./CSSPlugin.min(1).js"></script>
+<script type="text/javascript" src="./EasePack.min(1).js"></script>
+<script type="text/javascript" src="./728x90.js"></script>
+<script type="text/javascript">
+  var clickTag = "https://www.joinshrm.org";
+</script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body>
+  <div id="wrapper">
+    <div id="banner">
+      <div id="bg" class="fullbg pab"></div>
+      <div id="text1" class="tmp pac"></div>
+      <div id="text2" class="tmp pac"></div>
+      <div id="text3" class="tmp pac"></div>
+      <div id="text4" class="tmp pac"></div>
+      <div id="text5" class="pac"></div>
+      <div id="shadow" class="pab"></div>
+      <div id="roll"><div class="k letter" style="left: 0px; top: 0px; transform: translate3d(0px, 36.0946px, 0px);"></div><div class="n letter" style="left: 65px; top: 0px; transform: translate3d(0px, -36.0946px, 0px);"></div><div class="o letter" style="left: 131px; top: 0px; transform: translate3d(0px, 36.0946px, 0px);"></div><div class="w letter" style="left: 196px; top: 0px; transform: translate3d(0px, -36.0946px, 0px);"></div><div class="h letter" style="left: 0px; top: -13px;"></div><div class="i letter" style="left: 65px; top: 13px;"></div><div class="r letter" style="left: 131px; top: -13px;"></div><div class="e letter" style="left: 196px; top: 13px;"></div><div class="l letter" style="left: 0px; top: -49px;"></div><div class="e letter" style="left: 65px; top: -49px;"></div><div class="a letter" style="left: 131px; top: -49px;"></div><div class="d letter" style="left: 196px; top: 49px;"></div><div class="s letter" style="left: 0px; top: 49px;"></div><div class="h letter" style="left: 65px; top: -49px;"></div><div class="r letter" style="left: 131px; top: -49px;"></div><div class="m letter" style="left: 196px; top: -49px;"></div><div class=" letter" style="left: 0px; top: 49px;"></div><div class=" letter" style="left: 65px; top: -49px;"></div><div class=" letter" style="left: 131px; top: -49px;"></div><div class=" letter" style="left: 196px; top: -49px;"></div><div class="l letter" style="left: 0px; top: 49px;"></div><div class="e letter" style="left: 65px; top: -49px;"></div><div class="a letter" style="left: 131px; top: -49px;"></div><div class="d letter" style="left: 196px; top: -49px;"></div></div>
+      <div id="gate" class="pac"></div>
+      <div id="logo" class="pac"></div>
+
+      <a href="javascript:window.open(window.clickTag)" id="click-area" class="pab"></a>
+      <a href="javascript:window.open(window.clickTag)" id="cta" class="pac"></a>
+    </div>
+  </div>
+
+
+</body></html>

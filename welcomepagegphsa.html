@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WelcomePageGPHSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+  /*CSS for Mobile Responsive Navigation Bar */
+  .navDiv{
+      max-width: 100%;
+      background-color: #D8A298;
+  }
+
+  .navigation {
+    max-width: 100%;
+    padding: 0;
+    background-color: #D8A298;
+  }
+
+  .navButton a {
+    float: left;
+    background-color: #D8A298;
+  }
+
+  .navButton {
+      display: block;
+      background-color: #D8A298;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .navigations a:hover {
+    background: white;
+    color: #F58086;
+  }
+
+  .navheader {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  .slide-trigger {
+    display: none; /* need this */
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .slide-trigger span {
+    background-image: url("dropdown.png");
+    background-position: 0 -14px;
+    display: block;
+    float: right;
+    margin-top: 3px;
+    height: 14px;
+    width: 32px;
+  }
+
+
+  /*CSS For Gallery*/
+  * {margin: 0; padding: 0;}
+
+  body {
+  	background-color:#A02844;
+    max-width: 100%;
+    height: 300px;
+
+  }
+
+  #galleryContainer {
+  	width: 98%;
+  	overflow: hidden;
+  	margin: 50px auto;
+  	background: #A02844;
+  }
+
+    /*Keyframe animation for gallery*/
+    /*header*/
+  header {
+  	width: 800px;
+  	margin: 40px auto;
+  }
+
+  header h1 {
+  	text-align: center;
+  	font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+
+  }
+
+  header p {
+  	font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
+  	text-align: justify;
+  }
+
+  /*photobanner*/
+
+  .photobanner {
+  	height: 233px;
+  	width: 3550px;
+  	margin-bottom: 80px;
+  }
+  /*Hover affect for gallery images*/
+  .photobanner {
+  	height: 233px;
+  	width: 3550px;
+  	margin-bottom: 80px;
+  }
+
+  .photobanner img {
+  	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	-ms-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+  }
+
+  .photobanner img:hover {
+  	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	transform: scale(1.1);
+  	cursor: pointer;
+
+  	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  }
+  /*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 30s linear infinite;
+	   -moz-animation: bannermove 30s linear infinite;
+	    -ms-animation: bannermove 30s linear infinite;
+	     -o-animation: bannermove 30s linear infinite;
+	        animation: bannermove 30s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+  /*<!-- About Us Section -->*/
+  #aboutUsContainer {
+    max-width: 100%;
+    height: 500px;
+    background-color: #DC3A45;
+    color: white;
+  }
+
+  .support, .yourLocal, .girlGang {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+  }
+  .support {
+
+  }
+
+
+  /*<!-- Get Involved Section -->*/
+.getInvolvedTop {
+  max-width: 100%;
+  height: 55px;
+  background-color: #F4435D;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+
+}
+.getInvolvedColorBlock {
+  max-width: 100%;
+  height: 175px;
+  background-color:#F4435D;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 20px;
+
+}
+.getInvolvedOptionBlock {
+    max-width: 100%;
+    height: 175px;
+    background-color: #F58086;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+
+  /*Collumn Settings*/
+  .column.whole {width: 100%;}
+  .column.one-half {width: 50%;}
+  .column.one-third {width: 33.33%;}
+  .column.one-fourth{width: 25%;}
+  .column.one-fifth{width: 20%; float:left;}
+  .column.one-seventh {width: 14.285%;}
+  .column.one-eigth{width: 12.5%;}
+  .column.two-third{width: 66.66%}
+  .column.three-eigth{width: 37.5%;}
+  .column.two-fourth {width: 50%;}
+  .column.three-sixth{width: 50%;}
+
+  .column {
+    float:left;
+
+
+      }
+  </style>
+</head>
+  <body>
+    <div id="pageContainer">
+<!-- Mobile Responsive Navigation Bar -->
+    <div id="navContainer">
+      <div id="navDiv">
+        <h2 class="navheader collapse-trigger"><span></span></h2>
+          <nav class="group">
+              <h2 class="navheader slide-trigger">MENU<span></span></h2>
+                <div class="navigation group">
+                  <a href="home.html" class="navButton">
+                    <i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+                  <a href="home.html" class="navButton">
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>ABOUT</a>
+                  <a href="home.html" class="navButton">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>EVENTS</a>
+                  <a href="home.html" class="navButton">
+                    <i class="fa fa-users" aria-hidden="true"></i>MEMBERSHIP</a>
+                  <a href="home.html" class="navButton">
+                    <i class="fa fa-address-book" aria-hidden="true"></i>CONTACT</a>
+                  <a href="home.html" class="navButton">
+                    <i class="fa fa-rss" aria-hidden="true"></i>BLOG</a>
+                  <a href="home.html" class="navButton">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>LOGIN/SIGN-UP</a>
+                </div>
+          </nav>
+        </div>
+      </div>
+<!-- Gallery Section -->
+  <div id="galleryContainer">
+      <!-- Each image is 350px by 233px -->
+    <div class="photobanner">
+    	<img class="first" src="img1rs.jpg" alt="" />
+    	<img src="img2rs.jpg" alt="girlpowerhoursa" />
+      <img src="img3rs.jpg" alt="girlpowerhoursa" />
+    	<img src="img4rs.jpg" alt="girlpowerhoursa" />
+    	<img src="img5rs.jpg" alt="girlpowerhoursa" />
+      <img src="img1rs.jpg" alt="" />
+    	<img src="img2rs.jpg" alt="girlpowerhoursa" />
+      <img src="img3rs.jpg" alt="girlpowerhoursa" />
+    	<img src="img4rs.jpg" alt="girlpowerhoursa" />
+    	<img src="img5rs.jpg" alt="girlpowerhoursa" />
+
+
+    </div>
+  </div>
+<!-- About Us Section -->
+  <div id="aboutUsContainer">
+    <div class="column one-half"><h1 id="support">SUPPORT</h1>
+      <br><h1 id="yourLocal">YOUR LOCAL</h1>
+        <br> <h1 id="girlGang">GIRL GANG</h1></div>
+    <div class="column one-half"><a href="about.html" class="aboutUsButton"></a></div>
+  </div>
+<!-- Get Involved Section -->
+<div id="getInvolvedTopContainer">
+<div class="getInvolvedSection getInvolvedTop"><h1> Get Involved</h1></div>
+</div>
+  <div id="getInvolvedContainer">
+    <div class="column one-seventh getInvolvedSection getInvolvedColorBlock">
+      </div>
+    <div class="column one-seventh getInvolvedSection getInvolvedOptionBlock">
+      <i class="fa fa-users" aria-hidden="true"></i><br>MEMBERSHIP</div>
+    <div class="column one-seventh getInvolvedSection getInvolvedColorBlock"></div>
+    <div class="column one-seventh getInvolvedSection getInvolvedOptionBlock">PHILANTHROPIC<br>OUTREACH</div>
+    <div class="column one-seventh getInvolvedSection getInvolvedColorBlock"></div>
+    <div class="column one-seventh getInvolvedSection getInvolvedOptionBlock">VENDORS/<br> SPONSORS</div>
+    <div class="column one-seventh getInvolvedSection getInvolvedColorBlock"></div>
+
+  </div>
+<!-- Testimonials Section -->
+    <div id="TestimonialsContainer">
+    </div>
+<!-- Upcoming Events Section -->
+      <div id="upcomingEventsContainer">
+      </div>
+<!-- Connect With Us Section -->
+  <div id="connectWithUsContainer">
+  </div>
+<!-- Footer Section -->
+    <div id="footerContainer">
+      <footer>
+      </footer>
+    </div>
+
+  </div>
+
+  <!-- Javascript Code -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+/* MOBILE COLLAPSE MENU */
+(function($) {
+  $.fn.collapsable = function(options) {
+    // iterate and reformat each matched element
+    return this.each(function() {
+      // cache this:
+      var obj = $(this);
+      var tree = obj.next('.navigation');
+      obj.click(function(){
+        if( obj.is(':visible') ){tree.toggle();}
+      });
+      $(window).resize(function(){
+        if ( $(window).width() <= 570 ){tree.attr('style','');};
+      });
+    });
+  };
+})(jQuery);
+
+$(document).ready(function(){
+    $('.slide-trigger').collapsable();
+});
+</script>
+  </body>
+</html>

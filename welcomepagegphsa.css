@@ -1,0 +1,150 @@
+/*CSS for Mobile Responsive Navigation Bar */
+.navDiv{
+    max-width: 100%
+    background-color
+}
+
+.navigation {
+  max-width: 100%;
+  padding: 0;
+  background-color: black;
+}
+
+.navButton a {
+  float: left;
+  background-color: black;
+}
+
+.navButton {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.navigations a:hover {
+  background: white;
+  color: black;
+}
+
+.navheader {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.slide-trigger {
+  display: none; /* need this */
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.slide-trigger span {
+  background-image: url("dropdown.png");
+  background-position: 0 -14px;
+  display: block;
+  float: right;
+  margin-top: 3px;
+  height: 14px;
+  width: 32px;
+}
+
+
+/*CSS For Gallery*/
+* {margin: 0; padding: 0;}
+
+body {
+	<!-- src: http://subtlepatterns.com/?p=1045 -->
+	background: url('dark_geometric.png');
+}
+
+#container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
+}
+
+  /*Keyframe animation for gallery*/
+  /*header*/
+header {
+	width: 800px;
+	margin: 40px auto;
+}
+
+header h1 {
+	text-align: center;
+	font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+
+}
+
+header p {
+	font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
+	text-align: justify;
+}
+
+/*photobanner*/
+
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+/*Hover affect for gallery images*/
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+
+.photobanner img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/*Collumn Settings*/
+.column.one-half {width: 50%;}
+.column.one-third {width: 33.33%;}
+.column.one-fourth{width: 25%;}
+.column.one-fifth{width: 20%;
+                float:left;}
+.column.one-seventh {width: 14%;}
+.column.one-eigth{width: 12.5%}
+.column.two-third{width: 66.66%}
+.column.three-eigth{width: 37.5%}
+.column.two-fourth {width: 50%;}
+.column.three-sixth{width: 50%;}
+
+.column {
+  float:left;
+  padding: 10%
+  margin; 0px;
+  height: 90px;
+  width: 250px;
+  opacity: 0.9;
+    }
